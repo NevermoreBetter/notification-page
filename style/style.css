@@ -135,7 +135,11 @@ body {
 .container header button {
   background: none;
   border: none;
+  cursor: pointer;
   color: var(--Dark-grayish-blue);
+}
+.container header button:hover {
+  color: var(--Blue);
 }
 .container .notification-item {
   display: flex;
@@ -167,13 +171,19 @@ body {
   display: inline;
   margin-right: 1%;
 }
-.container .notification-item-text .group {
+.container .notification-item-text h3:hover {
+  cursor: pointer;
   color: var(--Blue);
-  font-weight: bold;
 }
+.container .notification-item-text .group,
 .container .notification-item-text .post {
   color: var(--Dark-grayish-blue);
   font-weight: bold;
+}
+.container .notification-item-text .group:hover,
+.container .notification-item-text .post:hover {
+  color: var(--Blue);
+  cursor: pointer;
 }
 .container .notification-item-time {
   margin-top: 0.3rem;
@@ -185,6 +195,7 @@ body {
   height: 3rem;
   border-radius: 50%;
   align-self: center;
+  cursor: pointer;
 }
 .container .notification-item #message {
   margin-left: 1rem;
@@ -192,6 +203,10 @@ body {
   border: 1px solid var(--Grayish-blue);
   border-radius: 0.5rem;
   padding: 1rem;
+}
+.container .notification-item #message:hover {
+  background-color: var(--Light-grayish-blue-1);
+  cursor: pointer;
 }
 .container .unchecked {
   background-color: var(--Light-grayish-blue-1);

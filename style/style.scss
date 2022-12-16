@@ -138,7 +138,11 @@ body {
     button {
       background: none;
       border: none;
+      cursor: pointer;
       color: var(--Dark-grayish-blue);
+      &:hover {
+        color: var(--Blue);
+      }
     }
   }
 
@@ -175,16 +179,21 @@ body {
       h3 {
         display: inline;
         margin-right: 1%;
+        &:hover {
+          cursor: pointer;
+          color: var(--Blue);
+        }
       }
 
-      .group {
-        color: var(--Blue);
-        font-weight: bold;
-      }
-
+      .group,
       .post {
         color: var(--Dark-grayish-blue);
         font-weight: bold;
+
+        &:hover {
+          color: var(--Blue);
+          cursor: pointer;
+        }
       }
     }
 
@@ -199,6 +208,7 @@ body {
       height: 3rem;
       border-radius: 50%;
       align-self: center;
+      cursor: pointer;
     }
 
     #message {
@@ -207,6 +217,10 @@ body {
       border: 1px solid var(--Grayish-blue);
       border-radius: 0.5rem;
       padding: 1rem;
+      &:hover {
+        background-color: var(--Light-grayish-blue-1);
+        cursor: pointer;
+      }
     }
   }
 
